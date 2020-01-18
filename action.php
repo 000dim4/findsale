@@ -11,20 +11,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 <?php
-$servername = 'localhost';   //  либо   '127.0.0.1' 
-$username =  'admin';
-$password = 'admin' ;
-$db_name = 'findsale';
 
-
-$opt = array(
-    PDO::ATTR_ERRMODE  => PDO::ERRMODE_EXCEPTION,
-    PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC
-);
-
-$connection = new PDO("mysql:host=$servername; dbname=$db_name; charset=utf8", $username, $password, $opt);
-$result = $connection->prepare("SELECT `ADRESS` FROM `shops`");
-$result->execute();
 echo "<body>";
     echo '<div class="linksContainer">';
         /*echo '<button class="openAll">Открыть все</button>';*/
