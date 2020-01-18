@@ -34,9 +34,7 @@ echo "<body>";
             <p class="warning"><br>Не открываются вкладки?<br>Ваш браузер заблокировал открытие всплывающих окон.<br>Снимите ограничение в правом верхнем углу интерфейса</p>'
             );
             echo ('<script type="text/javascript">
-            window.onload=function(e){
 
-            }
             </script>');
 
         /*echo('<script type="text/javascript">
