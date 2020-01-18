@@ -1,0 +1,242 @@
+*{
+    padding: 0px;
+    outline: none;
+    text-decoration: none;
+}
+body{
+    background-image: url(img/index-background-image.jpeg);
+    -moz-background-size: 100%; /* Firefox 3.6+ */
+    -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
+    -o-background-size: 100%; /* Opera 9.6+ */
+    background-size: 100%; /* Современные браузеры */
+    font-family: 'Merriweather', serif;
+}
+.search{
+    margin-top: 10%;
+    text-align: center;
+}
+.search h1{
+    font-weight: 900;
+    color: white;
+    text-shadow: 0px 4px 5px black;
+    /*-webkit-text-stroke: 0.01px greenyellow;*/
+}
+.search input[class="query"]{
+    width: 25%;
+    font-family: 'Merriweather', serif;
+    font-size: 20pt;
+    border: 0px black solid;
+    border-radius: 4px;
+    padding: 0.5%;
+    box-shadow: 0px 0px 9px black;
+}
+/*.search input::placeholder{
+    font-size: 10pt;
+    padding-top: 50%;
+    padding-bottom: 50%;
+}*/
+.search button{
+    width: 25%;
+    border: 0px;
+    border-radius: 4px;
+    margin-top: 1%;
+    padding: 5px;
+    font-size: 22pt;
+    color: black;
+    font-family: 'Merriweather', serif;
+    background-color: white;
+    transition: 0.3s ease;
+}
+.search button:hover{
+    box-shadow: 0px 0px 9px white;
+}
+.search button:active{
+    box-shadow: inset 0px 0px 10px rgba(0,0,0,0.5)
+}
+.guide a{
+    cursor: pointer;
+    border-bottom: 2px dashed black;
+}
+.guide a:hover{
+    color: white;
+    border-bottom: 2px dashed white;
+}
+.tooltip {
+    position: fixed;
+    padding: 10px 20px;
+    border: 1px solid #b3c9ce;
+    border-radius: 4px;
+    text-align: center;
+    font: italic 14px/1.3 sans-serif;
+    color: #333;
+    background: #fff;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, .3);
+  }
+
+
+
+
+  input[type=checkbox] {
+    vertical-align: middle !important; 
+  }
+  .tree {
+    margin: 0% auto;
+    width: 24%;
+    list-style-type: none; /* Убираем маркеры */
+  }
+  
+  .tree ul {
+    padding-top: 2%;
+    text-align: left;
+    display: none;
+    margin: 4px auto;
+    margin-left: 6px;
+    border-left: 1px dashed #dfdfdf;
+    list-style-type: none; /* Убираем маркеры */
+  }
+  
+  
+  .tree li {
+    padding: 4px 18px;
+    cursor: pointer;
+    vertical-align: middle;
+    background: #fff;
+    
+  }
+  
+  .tree li:first-child {
+    border-radius: 10px 10px 0 0;
+  }
+  
+  .tree li:last-child {
+    border-radius: 0 0 4px 4px;
+  }
+  
+  .tree .active,
+  .active li {
+    background: #efefef;
+  }
+  
+  .tree label {
+    cursor: pointer;
+  }
+  
+  .tree input[type=checkbox] {
+    margin: -2px 6px 0 0px;
+  }
+  
+  .has > label {
+    color: #000;
+  }
+  
+  .tree .total {
+    color: darkgray;
+  }
+
+/*Links Page*/
+.linksContainer{
+  margin: 7%;
+}
+.openAll{
+  background-color: #31A04B;
+}
+.linkButton{
+  background-color: #006afd;
+}
+.linkButton:hover{
+  background-color: #9fc7fd;
+}
+.linksContainer button{
+  width: 12%;
+  height: 40px;
+  border: 0px;
+  border-radius: 30px;
+  margin: 0.5%;
+  font-size: 14pt;
+  font-family: 'Merriweather', serif;
+  cursor: pointer;
+  color: white;
+}
+h1{
+  color: white;
+  text-shadow: 3px 3px 10px white;
+}
+.warning{
+  color: #cccccc;
+  font-size: 10pt;
+  transition: 0.2s ease-in-out;
+}
+.warning:hover{
+  color: white;
+  text-shadow: 3px 3px 10px white;
+  font-size: 14pt;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  @media screen and (max-width: 1024px){
+    .search input[class="query"]{
+        width: 85%;
+        font-size: 60pt;
+        padding: 0.5%;
+        border-radius: 10px;
+    }
+    .tree li:last-child {
+        border-radius: 0 0 10px 10px;
+      }
+    .tree {
+        width: 70%;
+        font-size: 35pt;
+      }
+    input[type=checkbox] {
+        transform:scale(0.5);
+        padding: 50px;
+      }
+    .tree li {
+        padding: 10px 18px;
+        
+      }
+    .search button{
+    width: 50%;
+    margin-top: 1%;
+    padding: 5px;
+    font-size: 50pt;
+    border-radius: 10px;
+    }
+    .search{
+        margin-top: 7%;
+    }
+    .search h1{
+        padding: 15px;
+        font-size: 70pt;
+    }
+    .guide a{
+        font-size: 25pt;
+    }
+    .tooltip{
+        font-size: 30pt;
+    }
+  }
